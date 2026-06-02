@@ -8,7 +8,7 @@ load_dotenv()
 # 💡 Initialize Gemini model framework (gemini-1.5-pro is excellent for multilingual tasks)
 model = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.3)
 
-# detailed way
+# detailed way 
 template2 = PromptTemplate(
     template='Greet this person in 5 languages. The name of the person is {name}',
     input_variables=['name']
